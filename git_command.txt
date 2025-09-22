@@ -1,0 +1,19 @@
+1) git init
+
+
+2)git config --global user.name "Your Name"
+
+3)git config --global user.email "your.email@example.com"
+
+
+4)git add .
+
+
+5)git branch -M main
+
+
+6)git remote add origin https://github.com/gurjeetsinghmundra/example11.git
+
+7)git push -u origin main
+
+8)git pull

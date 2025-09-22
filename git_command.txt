@@ -17,3 +17,5 @@
 7)git push -u origin main
 
 8)git pull
+
+gsgd

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let numbers = new Set([1,2,3,4,5]);
+
+        console.log(numbers);
+
+        let fruits = new Set();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple");
+
+        console.log(fruits);
+
+        console.log(fruits.has("Watermelon")); //to check wheather the item is present or not
+
+        fruits.delete("Apple");
+
+        console.log(fruits);
+
+        console.log(numbers.size); //to know the size of the set
+
+
+
+    </script>
+
+</body>
+</html>

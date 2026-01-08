@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        #container{
+            background-color: green;
+            height:400px;
+            padding:40px;
+        }
+
+        #box{
+            background-color: antiquewhite;
+            height:200px;
+            width:60%;
+            padding:10px;
+        }
+
+        #Heading{
+            background-color: coral;
+            border: 2px solid black;
+
+            padding:10px;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <!-- Event Propagation -->
+     <!-- Event Bubbling (child to parent) -->
+     <!-- Event Capturing (parent to child) it will work when we add true --> 
+    
+
+     <div id="container">
+
+        <div id="box">
+
+            <h1 id="Heading">Hello</h1>
+
+        </div>
+
+     </div>
+
+     <!-- <a href="https://www.google.com"  id="link">Google</a> -->
+
+     <form action="" onsubmit="">
+     <input type="text">
+
+     <input type="submit" value="Submit">
+     <button>Hello</button>
+     </form>
+    <script>
+
+        document.getElementById("container").addEventListener("click",function(e){
+            alert("Container clicked")    
+            e.stopPropagation(); //to stop the event propagation 
+           },
+        true)
+
+        document.getElementById("box").addEventListener("click",function(){
+            alert("Box clicked")     
+            
+           },
+        true)
+
+           document.getElementById("Heading").addEventListener("click",function(){
+            alert("Heading clicked")     
+           },true)
+
+           document.getElementById("link").addEventListener("click",function(event){
+
+            // event.preventDefault(); //this will prevent from refreshing the page
+           })
+
+    </script>
+
+    <!-- Currency Conversion -->
+     <!-- Weather Report -->
+    
+</body>
+</html>

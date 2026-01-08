@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .heading{
+        background-color: aqua;
+    }
+</style>
+<body>
+
+
+    <div class="container">
+
+
+        <h1 class="heading"  id="h1">1</h1>
+        <h1 class="heading" id="h2">2</h1>
+        <h1  class="heading" id="h3">3</h1>
+        <h1  class="heading" id="h4">4</h1>
+        <h1  class="heading" id="h5">5</h1>
+    </div>
+
+    <button onclick="change()">Change Color</button>
+
+
+    <script>
+
+
+        function change(){
+
+          const demo =  document.querySelector(".container")
+
+
+          demo.lastElementChild.style.background="yellow";
+
+          demo.firstElementChild.style.background="green";
+        }
+
+    </script>
+
+    
+</body>
+</html>

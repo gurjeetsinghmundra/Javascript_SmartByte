@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function hello(){
+            document.write("Hello User! Welcome to our Website!<br>");
+        }
+
+        function bye(){
+            document.write("Thank you! Visit Again!");
+        }
+
+        setTimeout(()=>{
+            hello();
+        },5000)
+
+        setTimeout(()=>{
+            bye();
+        },10000);
+
+        // js is asynchronous language (one function will not wait for other function to complete its execution)
+
+    </script>
+</body>
+</html>

@@ -53,11 +53,16 @@
 
      <!-- <a href="https://www.google.com"  id="link">Google</a> -->
 
-     <form action="" onsubmit="">
-     <input type="text">
+     <form action="" onsubmit="submitHandler(event)" id="form">
+     <input type="text" placeholder="Enter name" name="username">
+     <br>
+     <br>
+     <input type="email" placeholder="Enter email" name="useremail"> 
+     <br>
+     <br>
 
-     <input type="submit" value="Submit">
-     <button>Hello</button>
+     <input type="submit" value="Submit" >
+    
      </form>
     <script>
 
@@ -80,6 +85,20 @@
            document.getElementById("link").addEventListener("click",function(event){
 
             // event.preventDefault(); //this will prevent from refreshing the page
+           })
+
+
+           function submitHandler(event){
+            event.preventDefault(); //this will prevent from refreshing the page
+           
+           }
+
+           document.getElementById("form").addEventListener("submit",function(event){
+            event.preventDefault();
+
+
+            //  console.log(event.target.username.value);
+            //  console.log(event.target.useremail.value);
            })
 
     </script>
